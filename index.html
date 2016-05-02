@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <div id="googlemaps"></div>
+       <div class="container">
+        <h1>The Brian Lessinger Team</h1>
+        <a class="button1" href="https://www.yelp.com/writeareview/biz/1LGJtIrHbPDzT7i04g-a6w?return_url=%2Fbiz%2F1LGJtIrHbPDzT7i04g-a6w">Review Us On Yelp</a>
+        <a class="button2" href="http://www.zillow.com/reviews/write/?s=X1-ZUz3gh9hz7qivd_5886z">Review Us On Zillow</a>
+        <a class="button3" href="http://www.trulia.com/profile/brian-lessinger-agent-reno-nv-zgr4px1d/reviews">Review Us On Trulia</a>
+        <br />
+        <p>10795 Double R Blvd. Reno, NV 89521</p>
+        <a href="tel:1-775-327-9900" itemprop="telephone">775-327-9900</a>
+        |
+        <a href="mailto:brian@thelessingerteam.com" itemprop="email">brian@thelessingerteam.com</a>
+        |
+        <a href="http://www.thelessingerteam.com " itemprop="URL">thelessingerteam.com </a>
+       </div>
+    <!-- Include the Google Maps API library - required for embedding maps -->
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+ 
+<script type="text/javascript">
+ 
+// The latitude and longitude of your business / place
+var position = [39.426302, -119.751630];
+ 
+function showGoogleMaps() {
+ 
+    var latLng = new google.maps.LatLng(position[0], position[1]);
+ 
+    var mapOptions = {
+        zoom: 16, // initialize zoom level - the max value is 21
+        streetViewControl: false, // hide the yellow Street View pegman
+        scaleControl: true, // allow users to zoom the Google Map
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        center: latLng
+    };
+ 
+    map = new google.maps.Map(document.getElementById('googlemaps'),
+        mapOptions);
+ 
+    // Show the default red marker at the location
+    marker = new google.maps.Marker({
+        position: latLng,
+        map: map,
+        draggable: false,
+        animation: google.maps.Animation.DROP
+    });
+}
+ 
+google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+</script>
+    </body>
+</html>

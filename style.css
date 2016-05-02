@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+    margin: 0em;
+    padding: 0em; 
+}
+
+a, p, h1, address, strong {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 60%;
+    padding: 2em; 
+    z-index: 1;
+    border-radius: 0.5em;
+    margin: 5% auto;
+    align-content: center;
+    text-align: center;
+    position: relative; 
+    height: auto;
+    background: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+h1 {
+    text-align: center;
+}
+
+#googlemaps { 
+  height: 100%; 
+  width: 100%; 
+  position:absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+  opacity: .75; /* Set the opacity for a slightly transparent Google Form */
+}
+
+.button1 {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #C21613;
+    color: white;
+    width: 50%;
+    padding: 1em;
+    margin: 25%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button2 {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #0074E4;
+    color: white;
+    width: 50%;
+    padding: 1em;
+    margin: 25%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button3 {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #20C063;
+    color: white;
+    width: 50%;
+    padding: 1em;
+    margin: 25%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button3:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
